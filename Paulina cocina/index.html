@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulina Cocina - Pascuas</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header id="header">
+    <img src="imagenes/paulina.png" alt="imagenes" width="300">
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="text">
+        <h1>¡Celebrá la Pascua con sabor casero y creatividad pastelera!</h1>
+        <p>Recetario exclusivo de recetas de Pascua by Paulina + sorteo de un set pastelero profesional</p>
+        <button onclick="location.href='#formulario'">¡Quiero esos beneficios!</button>
+      </div>
+      <img src="imagenes/gifthuevo.gif" alt="imagenes" >
+    </section>
+
+    <section class="info">
+      <h1>Creá, decorá y sorprendé esta Pascua</h1>
+        <div class="cards-container">
+          <div class="cards">
+            <div class="card">
+              <h3>No hay mejor regalo que algo hecho con tus manos</h3>
+              <p>Personalizá con rellenos sorpresas y mensajes especiales.</p>
+            </div>
+            <div class="card">
+              <h3>Técnicas caseras con resultados profesionales</h3>
+              <p>Descubrí trucos únicos y tips para decorarlos fácil y lindos.</p>
+            </div>
+            <div class="card card-large">
+              <h3>Aprende de cero</h3>
+              <p>No necesitás experiencia previa, te voy a guiar paso a paso para crear huevos de Pascua con mucha onda!</p>
+            </div>
+          </div>
+          <div class="paulinafoto">
+            <img src="imagenes/paulinahuevo.png" alt="Paulina con huevo" width="400">
+          </div>
+        </div>
+      </section>
+
+    <section class="tipos" id="huevos">
+      <h2>Spoiler: te van a quedar mejor que los de paquete</h2>
+      <div class="huevos">
+        <div class="huevo">
+          <p>Receta facil en 15´</p>
+          <img src="imagenes/huevo-relleno.png" alt="imagenes" width="300">
+          <h3>Huevo relleno</h3>
+        </div>
+        <div class="huevo">
+          <p>Para los mas chicos</p>
+          <img src="imagenes/huevo-decorado.png" alt="imagenes" width="300">
+          <h3>Huevo decorado</h3>
+        </div>
+        <div class="huevo">
+          <p>Nivel: te copaste</p>
+          <img src="imagenes/huevo-gigante.png" alt="imagenes" width="300">
+          <h3>Huevo gigante</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="area-titulo">
+      <div class="textos">
+         <h1>Mirá lo que hicieron con <br> <span>#PascuasConPaulina</span></h1>
+      <p>Inspirate con lo que cocinó la comunidad y animate a compartir el tuyo e incentivar a tus amigos!</p>
+      </div>
+        <img src="imagenes/collage.jpg" alt="imagenes" width="700">
+    </section>
+
+    <section class="formulario" id="formulario">
+      <div class="formulario-container">
+        <div class="formulario-info">
+          <h2>Participá y Ganá un Set Pastelero</h2>
+          <p>Registrate y entrá al sorteo de tu kit pastelero completo para llevar tus creaciones al próximo nivel!</p>
+          <ul class="formulario-info ul">
+            <li>Ingresá tu nombre y mail en el formulario.</li>
+            <li>Te enviaremos al instante el recetario digital.</li>
+            <li>Automáticamente quedás participando del sorteo por un set pastelero profesional (boquilla, manga, espátula y más).</li>
+          </ul>
+          <p>¡No te lo pierdas! Recetas, inspiración y la chance de ganar el kit con el que vas a convertir tu cocina en un verdadero laboratorio de Pascua.</p>
+        </div>
+    
+        <form>
+          <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+          <input type="email" name="correo" id="correo" placeholder="Correo electrónico" required>
+          <button type="submit" id="submit">¡Quiero esos beneficios!</button>
+        </form>
+      </div>
+    </section>    
+  </main>
+
+  <section class="feedback oculto" id="feedback"> 
+    <div class="carta">
+      <button id="botoncerrar"  onclick="cerrarPopup()"> X </button>
+<p> ¡Gracias <span id="nombre_placeholder"> </span> te mandé el recetario al mail. Revisaló como si fuera un huevo de Pascua relleno de sorpresa (porque lo es). Y sí, ya estás en el sorteo… ¡ojalá te toque el premio y no el huevo duro!</p>
+    </div> 
+  </section>
+
+  <footer class="footer">
+    <div class="footer-col logo">
+      <img src="imagenes/paulina.png" alt="Paulina Cocina" width="160">
+    </div>
+  
+    <div class="footer-col contact" >
+      <ul>
+        <li> <img src="imagenes/wsp.png" alt="" width="22px" id="wsp">+54 11 7367-3280</li>
+        <li> <img src="imagenes/msj.png" alt="" width="20px" id="msj">almacen@paulinacocina.net</li>
+      </ul>
+    </div>
+  
+    <div class="footer-col links" >
+      <ul>
+        <li><a href="#">Aviso legal y términos de uso</a></li>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Política de cookies</a></li>
+        <li><a href="#">Mirá las recetas en mi blog</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="scrip.js"></script>
+</body>
+</html>    
